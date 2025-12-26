@@ -55,6 +55,5 @@ func ToCents(amountStr string) (int64, error) {
 	if diff > 0.001 { // 允许0.001的误差（处理浮点数精度问题）
 		return 0, fmt.Errorf("金额最多支持2位小数")
 	}
-
 	return amountInCents, nil
 }
